@@ -1,0 +1,13 @@
+function arrow(){
+    let name = prompt("Welcome to my website!, Write your name!");
+let hello = (m) => alert("Hello," + m + "!");
+hello(name);
+} arrow();
+
+function ternaryOperator(){
+    let age = +prompt("Сколько тебе лет?");
+function check(a) {
+  return a >= 18 ? "Ты взрослый!" : "Ты ещё ребёнок!";
+}
+alert(check(age));
+} ternaryOperator();
