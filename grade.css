@@ -1,0 +1,70 @@
+function DoWhile(){
+  let again;
+do {
+  let n = prompt("Введите число:");
+  alert("Квадрат числа: " + n * n);
+  again = prompt("Продолжить? (да/нет)");
+} while (again.toLowerCase() =="да");
+}
+
+function NumberInSquare(){
+  let n = prompt("Введите число от 1 до 100, до которого хотите увидеть квадраты:");
+n = Number(n);
+
+if (isNaN(n) || n < 1 || n > 100) {
+  alert("Ошибка! Введите число от 1 до 100.");
+} else {
+  let result = "Квадраты чисел от 1 до " + n + ":\n";
+
+  for (let i = 1; i <= n; i++) {
+    result += i + "^2 = " + (i * i) + "\n";
+  }
+
+  alert(result);
+}
+}
+NumberInSquare();
+
+function YourPoint() {
+    let mark = prompt("Веддите свою оценку в Букве:");
+
+switch(mark) {
+    case 'A+':
+        console.log("95-100");
+        break;
+    case 'A':
+        console.log("90-95");
+        break;
+    case  'A-':
+        console.log("85-90");
+        break;
+    case 'B+':
+        console.log("80-85");
+        break;
+    case 'B':
+        console.log("75-80");
+        break;
+    case  'B-':
+        console.log("70-75");
+        break;
+    case 'C+':
+        console.log("65-70");
+        break;
+    case 'C':
+        console.log("60-65");
+        break;
+    case  'C-':
+        console.log("55-60");
+        break;
+    case 'D':
+        console.log("50");
+        break;
+    case 'F':
+        console.log("0-50");
+        break;
+    default:
+        console.log("Неверно ! , Введите свою оценку в Букве правильно только загланую. ");
+        break;
+}
+}
+YourPoint();
